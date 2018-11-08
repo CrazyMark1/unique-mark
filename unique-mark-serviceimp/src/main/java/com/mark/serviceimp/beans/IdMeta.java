@@ -6,7 +6,7 @@ package com.mark.serviceimp.beans;
  * @Date: Create in 2018/9/4 11:31
  * @QQ: 85104982
  */
-public class IdMata {
+public class IdMeta {
     private int versionBits;
     private int timeBits;
     private int sequenceBits;
@@ -14,7 +14,7 @@ public class IdMata {
     private int machineIdBits;
     private int timeTypeBits;
 
-    public IdMata(int versionBits, int timeBits, int sequenceBits, int genTypeBits, int machineIdBits, int timeTypeBits) {
+    public IdMeta(int versionBits, int timeBits, int sequenceBits, int genTypeBits, int machineIdBits, int timeTypeBits) {
         this.versionBits = versionBits;
         this.timeBits = timeBits;
         this.sequenceBits = sequenceBits;

@@ -1,4 +1,4 @@
-package com.mark.beans;
+package com.mark.configuration.beans;
 
 /**
  * @Author: 帅气的Mark

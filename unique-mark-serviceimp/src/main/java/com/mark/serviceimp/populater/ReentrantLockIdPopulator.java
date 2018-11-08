@@ -13,7 +13,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date: Create in 2018/9/5 13:53
  * @QQ: 85104982
  */
-public class ReentrantLockIdPopulattor implements IdPopulater{
+public class ReentrantLockIdPopulator implements IdPopulator {
     private long sequence=0;
     private long lastTimestamp=-1;
     private ReentrantLock lock=new ReentrantLock();

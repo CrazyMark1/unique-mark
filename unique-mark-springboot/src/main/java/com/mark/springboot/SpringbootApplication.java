@@ -1,12 +1,12 @@
-package com.mark.uniquemarkspringboot;
+package com.mark.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UniqueMarkSpringbootApplication {
+public class SpringbootApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UniqueMarkSpringbootApplication.class, args);
+		SpringApplication.run(SpringbootApplication.class, args);
 	}
 }

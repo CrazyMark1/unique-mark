@@ -24,6 +24,11 @@ public class TimeUtil {
             throw new RuntimeException("时间错误");
     }
 
+    public static void validateZkTimestamp(long timestamp,long zktimestamp){
+        if (zktimestamp>timestamp)
+            throw new RuntimeException("与Zk时间不符，请调整时间");
+    }
+
     public static long waitNextTimestamp(long lastTimestamp,TimeType timeType){
         long timestamp=getTimestamp(timeType);
         while (timestamp<=lastTimestamp){

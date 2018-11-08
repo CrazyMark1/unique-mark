@@ -11,6 +11,6 @@ import java.util.concurrent.ExecutionException;
  * @Date: Create in 2018/9/4 16:48
  * @QQ: 85104982
  */
-public interface IdPopulater {
+public interface IdPopulator {
     void populateId(Id id, IdMeta idMeta) throws ExecutionException, InterruptedException;
 }

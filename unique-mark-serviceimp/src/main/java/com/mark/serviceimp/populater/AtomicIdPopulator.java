@@ -1,8 +1,8 @@
 package com.mark.serviceimp.populater;
 
-import com.mark.beans.Id;
+import com.mark.configuration.beans.Id;
 import com.mark.serviceimp.beans.IdMeta;
-import com.mark.serviceimp.beans.TimeType;
+import com.mark.configuration.beans.TimeType;
 import com.mark.utils.TimeUtil;
 
 import java.util.concurrent.atomic.AtomicReference;
@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * @Date: Create in 2018/9/5 11:18
  * @QQ: 85104982
  */
-public class AtomicPopulator implements Populater {
+public class AtomicIdPopulator implements IdPopulator {
     class Variant {
         private long sequence = 0;
         private long lastTimestamp = -1;

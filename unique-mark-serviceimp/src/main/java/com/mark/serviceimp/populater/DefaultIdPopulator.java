@@ -11,7 +11,7 @@ import com.mark.utils.TimeUtil;
  * @Date: Create in 2018/9/4 16:49
  * @QQ: 85104982
  */
-public class DefaultIdPopulater implements IdPopulater {
+public class DefaultIdPopulator implements IdPopulator {
     private long sequence=0;
     private long lastTimestamp=-1;
     @Override

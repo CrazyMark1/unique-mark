@@ -1,6 +1,6 @@
-package com.mark.serviceimp.provider;
+package com.mark.configuration.machineidprovider;
 
-import com.mark.configuration.machineidprovider.MachineIdProvider;
+import com.mark.configuration.ConfigImp;
 
 /**
  * @Author: 帅气的Mark
@@ -9,8 +9,14 @@ import com.mark.configuration.machineidprovider.MachineIdProvider;
  * @QQ: 85104982
  */
 public class MachineDefaultProvider implements MachineIdProvider {
+    private ConfigImp configImp;
+
+    public MachineDefaultProvider(ConfigImp configImp) {
+        this.configImp = configImp;
+    }
+
     @Override
     public long getMachineId() {
-        return 1022;
+        return configImp.getMachineId();
     }
 }

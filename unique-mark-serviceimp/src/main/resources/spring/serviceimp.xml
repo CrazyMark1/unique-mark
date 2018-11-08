@@ -3,4 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <import resource="classpath*:spring/configimp.xml"/>
+    <bean id="idService" class="com.mark.serviceimp.IdServiceImp">
+        <constructor-arg name="configImp" ref="markconfig"/>
+    </bean>
 </beans>

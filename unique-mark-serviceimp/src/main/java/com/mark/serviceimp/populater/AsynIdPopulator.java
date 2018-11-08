@@ -11,6 +11,6 @@ import java.util.concurrent.Future;
  * @Date: Create in 2018/9/5 15:23
  * @QQ: 85104982
  */
-public interface AsynIdPopulater extends IdPopulater{
+public interface AsynIdPopulator extends IdPopulator {
     Future asynPopulateId(Id id, IdMeta idMeta);
 }

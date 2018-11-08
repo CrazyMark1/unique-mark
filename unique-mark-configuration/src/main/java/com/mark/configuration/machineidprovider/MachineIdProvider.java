@@ -1,4 +1,4 @@
-package com.mark.serviceimp.provider;
+package com.mark.configuration.machineidprovider;
 
 /**
  * @Author: 帅气的Mark
@@ -6,6 +6,6 @@ package com.mark.serviceimp.provider;
  * @Date: Create in 2018/9/4 13:45
  * @QQ: 85104982
  */
-public interface MachineProvider {
-    long getMachineId(String ip);
+public interface MachineIdProvider {
+    long getMachineId();
 }
